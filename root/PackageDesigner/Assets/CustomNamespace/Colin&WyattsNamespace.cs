@@ -2,20 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace CustomNamespace
+namespace CustomSpace
 { 
-    //generics
-
-
-    //actions
-
-
-    //conversions
-
-
-
-
-
 
 
 }
