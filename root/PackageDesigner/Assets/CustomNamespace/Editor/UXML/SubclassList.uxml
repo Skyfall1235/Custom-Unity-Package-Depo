@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Assets/Scripts/Editor/UXML/SO_List_Style.uss?fileID=7433441132597879392&amp;guid=b397d1c02a9fc4c4c85a304d8c2e4db9&amp;type=3#SO_List_Style" />
+    <ui:VisualElement name="Root" style="flex-grow: 1; align-self: stretch; justify-content: flex-start; align-items: stretch;">
+        <ui:VisualElement name="DropDown" style="flex-grow: 1;">
+            <ui:DropdownField label="Type" index="-1" choices="System.Collections.Generic.List`1[System.String]" name="TypeSelectionDropdown" style="justify-content: space-around; align-items: center; align-self: stretch;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="ObjectProperties" style="flex-grow: 1;" />
+    </ui:VisualElement>
+</ui:UXML>

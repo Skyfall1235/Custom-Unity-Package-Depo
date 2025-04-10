@@ -1,0 +1,28 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Assets/Scripts/Editor/UXML/ItemCustomInspectorStyle.uss?fileID=7433441132597879392&amp;guid=14cbcee8f68a4df42b94ac3d67e2881b&amp;type=3#ItemCustomInspectorStyle" />
+    <ui:VisualElement name="Root" style="flex-grow: 1; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px;">
+        <ui:VisualElement name="InspectorContainer" class="inspectorContainer">
+            <ui:VisualElement name="TitleContainer" style="flex-grow: 1; align-items: center; justify-content: space-between; align-self: stretch;">
+                <ui:TextField name="TitleField" label="Item Name" class="centerText unity-base-text-field__input--single-line topFields" style="-unity-text-align: middle-center; -unity-font-style: normal; text-overflow: clip; white-space: nowrap; font-size: 12px; flex-direction: column;" />
+                <ui:TextField picking-mode="Ignore" multiline="true" auto-correction="false" label="Description" hide-mobile-input="false" name="DescriptionField" class="topFields" style="flex-wrap: wrap; flex-direction: column; white-space: normal; -unity-font-style: normal;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="Spacer" style="flex-grow: 1; height: 10px;" />
+            <ui:VisualElement name="PreviewContainer" style="flex-grow: 1; flex-direction: row; justify-content: center; align-self: center; align-items: center; height: auto;">
+                <ui:VisualElement name="ModelTabContainer" class="tabContainer" style="flex-grow: 1;">
+                    <ui:Label tabindex="-1" text="Model" parse-escape-sequences="true" display-tooltip-when-elided="true" style="-unity-text-align: upper-center; -unity-font-style: normal;" />
+                    <ui:VisualElement name="ModelPreviewContainer" class="displayPanel" style="flex-grow: 1; width: 100%; height: auto; align-items: stretch; justify-content: center; align-self: stretch;" />
+                </ui:VisualElement>
+                <ui:VisualElement view-data-key="SpriteTabContainer" name="SpriteTabContainer" class="tabContainer" style="flex-grow: 1;">
+                    <ui:Label tabindex="-1" text="Sprite" parse-escape-sequences="true" display-tooltip-when-elided="true" style="-unity-text-align: upper-center; -unity-font-style: normal;" />
+                    <ui:VisualElement name="SpritePreviewContainer" class="displayPanel" style="justify-content: center; align-self: stretch;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="Properties" style="flex-grow: 1;">
+                <ui:Label tabindex="-1" text="Properties" parse-escape-sequences="true" display-tooltip-when-elided="true" style="-unity-text-align: upper-center; -unity-font-style: normal;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <AspectRatioElement>
+        <ui:VisualElement style="flex-grow: 1;" />
+    </AspectRatioElement>
+</ui:UXML>
