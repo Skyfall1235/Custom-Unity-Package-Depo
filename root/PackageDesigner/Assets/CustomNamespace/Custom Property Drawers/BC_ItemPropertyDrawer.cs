@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UIElements;
 using UnityEditor.UIElements;
 using UnityEditor;
+using Assets.CustomNamespace;
 
 [CustomPropertyDrawer(typeof(BC_Item), true)]
 public class BC_ItemPropertyDrawer : PropertyDrawer

@@ -275,7 +275,7 @@ public class AsyncLoader : MonoBehaviour
         // Iterate over the list of scenes and start an asynchronous unload operation for each scene.
         for (int i = 0; i < sceneList.Length; i++)
         {
-            // Start the asynchronous unload operation and store the result in the temporary variable.
+            // Start the asynchronous unload operation and store the m_result in the temporary variable.
             Coroutine unloadCoroutine;
             UnloadSingleScene(sceneList[i], out unloadCoroutine);
             // Assign the temporary variable to the appropriate element in the `sceneUnloadCoroutineList` array.

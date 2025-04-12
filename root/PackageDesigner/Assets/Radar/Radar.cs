@@ -22,7 +22,7 @@ public class Radar : MonoBehaviour
         public GameObject ObjectHit;  // The object that was hit by the radar (reference type, could be null)
         public Vector3 HitLocation;   // The 3D coordinates of the hit location in the world
         public float LocalAzimuth;    // The azimuth angle (direction) at which the radar hit occurred
-        public RadarSignature signature;  // An optional radar signature that may describe the target's properties
+        public RadarSignature signature;  // An optional radar signature that may describe the m_target's properties
 
         /// <summary>
         /// Constructor to initialize a RadarHit with the specified properties

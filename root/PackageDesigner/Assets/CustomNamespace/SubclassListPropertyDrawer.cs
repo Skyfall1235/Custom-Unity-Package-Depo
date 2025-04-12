@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using UnityEditor;
-using UnityEngine;
 using UnityEngine.UIElements;
 using UnityEditor.UIElements;
+using CustomNamespace;
 
 [CustomPropertyDrawer(typeof(SubclassListAttribute))]
 public class SubclassListPropertyDrawer : PropertyDrawer
