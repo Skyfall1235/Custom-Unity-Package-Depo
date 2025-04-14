@@ -5,9 +5,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System;
 
-namespace CustomSpace
+namespace CustomNamespace.Serialization
 { 
-    public static class GenericSerialization
+    public static class GenericJSONSerialization
     {
         /// <summary>
         /// Serializes an object of type T to a JSON file.

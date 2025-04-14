@@ -1,12 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
 using UnityEditor.UIElements;
 using UnityEditor;
-using Assets.CustomNamespace;
+using CustomNamespace;
 
-[CustomPropertyDrawer(typeof(BC_Item), true)]
+//[CustomPropertyDrawer(typeof(BC_Item), true)]
 public class BC_ItemPropertyDrawer : PropertyDrawer
 {
     const string filePathForBC_ItemDrawerTree = "Assets/Scripts/Editor/UXML/ItemCustomInspector.uxml";
@@ -141,7 +139,8 @@ public class BC_ItemPropertyDrawer : PropertyDrawer
         m_itemCustomInspectorTree.CloneTree(root);
         VisualElement propertyHolder = root.Query<VisualElement>("Properties");
         VisualElement modelPreviewContainer = root.Query<VisualElement>("ModelPreviewContainer");
-        foreach (SerializedProperty childProperty in property.GetChildren())
+        //REMOIVED .GETcHILDREN, NOT SURE IF IS NEEDED
+        foreach (SerializedProperty childProperty in property)
         {
             PropertyField fieldToAdd = new PropertyField();
             fieldToAdd.BindProperty(childProperty);
@@ -191,7 +190,7 @@ public class BC_ItemPropertyDrawer : PropertyDrawer
                             if (!Mathf.Approximately(clampedvalue, callbackEvent.newValue))
                             {
                                 callbackEvent.StopImmediatePropagation();
-                                callbackEvent.PreventDefault();
+                                //callbackEvent.PreventDefault();
                                 floatFieldToAdd.value = clampedvalue;
                             }
                         }
